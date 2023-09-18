@@ -32,7 +32,7 @@ const Entry = ({ navigation }) => {
                 <Image source={mainBg} style={styles.mainBgImage}/>
                 <Image source={verticalLeftGradient} style={styles.verticalLeftGradientImage}/>
                 <Image source={threeDevices} style={styles.threeDevicesImage}/>
-                <Text style={styles.threeDevicesCaption}> Longer lasting up to 5000 Puffs</Text>
+                <Text style={styles.threeDevicesCaption}> Longer lasting up to 5000 Puffs*†</Text>
                 <TouchableOpacity onPress={handleButtonPress} style={styles.discoverButton}>
                     <Text style={{fontFamily: "Gotham-Bold", textTransform: "uppercase"}}>discover more</Text>
                 </TouchableOpacity> 
