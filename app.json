@@ -4,10 +4,10 @@
     "slug": "vuse-survey-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.hexstudio.vusesurveyapp"
+      "bundleIdentifier": "com.hexstudio.vusesurveyapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
