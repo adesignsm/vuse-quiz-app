@@ -20,6 +20,7 @@ const Entry = ({ navigation }) => {
     if (!fontsLoaded) return null;
 
     const handleButtonPress = () => {
+        console.log("test");
         navigation.navigate("Product");
     }
 

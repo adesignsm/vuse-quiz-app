@@ -54,22 +54,22 @@ const Raffle = ({ navigation }) => {
     };
 
     ////TO RETRIEVE ALL THE STORED DATA
-    // const logAllStoredData = async () => {
-    //     try {
-    //       const keys = await AsyncStorage.getAllKeys(); // Get all storage keys
-    //       const data = await AsyncStorage.multiGet(keys); // Get data for all keys
+    const logAllStoredData = async () => {
+        try {
+          const keys = await AsyncStorage.getAllKeys(); // Get all storage keys
+          const data = await AsyncStorage.multiGet(keys); // Get data for all keys
       
-    //       data.forEach(([key, value]) => {
-    //         console.log(`Key: ${key}, Value: ${value}`);
-    //       });
-    //     } catch (error) {
-    //       console.error('Error retrieving and logging data:', error);
-    //     }
-    // };
+          data.forEach(([key, value]) => {
+            console.log(`Key: ${key}, Value: ${value}`);
+          });
+        } catch (error) {
+          console.error('Error retrieving and logging data:', error);
+        }
+    };
 
-    // const handleTestPress = () => {
-    //     logAllStoredData();
-    // }
+    const handleTestPress = () => {
+        logAllStoredData();
+    }
 
     ////TO CLEAR ALL DATA
     // const clearAllData = async () => {
@@ -105,7 +105,7 @@ const Raffle = ({ navigation }) => {
                         </TouchableOpacity>
                         <Text style={{color: "#fff", marginLeft: 5, fontFamily: "Gotham-Light"}}> I have read and acknowledge the contest rules. </Text>
                     </View>
-                    <TouchableOpacity title="Submit" onPress={handleFormSubmit} style={styles.submitButton}>
+                    <TouchableOpacity title="Submit" onPress={handleTestPress} style={styles.submitButton}>
                         <Text style={{textTransform: "uppercase", fontFamily: "Gotham-Bold"}}> Submit </Text>
                     </TouchableOpacity>
                 </View>
