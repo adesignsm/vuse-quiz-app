@@ -54,22 +54,22 @@ const Raffle = ({ navigation }) => {
     };
 
     ////TO RETRIEVE ALL THE STORED DATA
-    const logAllStoredData = async () => {
-        try {
-          const keys = await AsyncStorage.getAllKeys(); // Get all storage keys
-          const data = await AsyncStorage.multiGet(keys); // Get data for all keys
+    // const logAllStoredData = async () => {
+    //     try {
+    //       const keys = await AsyncStorage.getAllKeys(); // Get all storage keys
+    //       const data = await AsyncStorage.multiGet(keys); // Get data for all keys
       
-          data.forEach(([key, value]) => {
-            console.log(`Key: ${key}, Value: ${value}`);
-          });
-        } catch (error) {
-          console.error('Error retrieving and logging data:', error);
-        }
-    };
+    //       data.forEach(([key, value]) => {
+    //         console.log(`Key: ${key}, Value: ${value}`);
+    //       });
+    //     } catch (error) {
+    //       console.error('Error retrieving and logging data:', error);
+    //     }
+    // };
 
-    const handleTestPress = () => {
-        logAllStoredData();
-    }
+    // const handleTestPress = () => {
+    //     logAllStoredData();
+    // }
 
     ////TO CLEAR ALL DATA
     // const clearAllData = async () => {
